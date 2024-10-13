@@ -1,0 +1,152 @@
+body {
+    font-family: "Pixelify Sans";
+    background-image: url(../imagens/desktop-wallpaper-beyblade-burst-black-achilles-beyblade.jpg);
+    background-size:cover ;
+    background-position: center;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    backdrop-filter: blur(15px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.sumario{
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.bey{
+    display: none;
+    max-width: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.bey.aberto{
+    display: block;
+}
+
+.bey img{ 
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.bey .topo {
+    padding: 30px 40px 0;
+}
+
+.bey .nome{
+    margin-bottom: 5px;
+}
+
+.bey .tipo{
+    background-color: #ffffff;
+    font-size: 12px;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.bey .detalhes{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bey .informacoes{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.bey .informacoes h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #315f5d
+}
+
+.bey .informacoes .descricao{
+    padding: 0 10px;
+    font-size: 20px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.tipo-ataque {
+    background-color: #3a73e6;
+}
+
+.tipo-equilibro-red {
+    background-color: #502b2e;
+}
+
+.tipo-resistencia {
+    background-color:#E3963E;
+}
+
+.tipo-equilibro-puple {
+    background-color: #9932cc;
+}
+
+.tipo-defesa{
+    background-color: #990632;
+}
+
+.listagem{
+    max-width: 200px;
+}
+
+.listagem .beyblade img{
+    width: 25%;
+}
+
+.listagem .beyblade{
+    background-color: #315f5d;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    min-height: 70px;
+
+    transition: 0.15 ease-in-out;
+}
+
+.listagem .beyblade:hover{
+    transform: scale(1.10);
+}
+
+.listagem .beyblade span{
+    padding-right: 20px;
+}
+
+.listagem .beyblade.ativo{
+    background-color: #fa6668;
+}

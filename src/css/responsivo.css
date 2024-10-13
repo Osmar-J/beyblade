@@ -1,0 +1,40 @@
+@media(max-width: 750px){
+    .sumario{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .bey{
+        max-width: 300px;
+    }
+
+    .bey .informacoes{
+        padding: 60px 30px 30px;
+        margin-top: -50px;
+    }
+
+    .bey .informacoes h3{
+        font-size: 16px;
+    }
+
+    .listagem{
+        max-width: 360px;
+    }
+
+    .bey .beyblades{
+        width: 45%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-top: 0;
+        border-radius: 8px;
+    }
+
+    .listagem ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+}
